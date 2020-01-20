@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alma</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+<!-- SCROLL ANIMATION -->
+<script>
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    });
+</script>
+
+</html>
+
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li><img src="assets/img/logo.svg" alt="alma"></li>
+            <div class="nav-items">
+                <li>
+                    <a href="#quienes-somos">
+                        ¿Quiénes somos?
+                    </a>
+                </li>
+                <li>
+                    <a href="#que-hacemos">
+                        ¿Qué hacemos?
+                    </a>
+                </li>
+                <li>
+                    <a href="#nuestros-exitos">
+                        Nuestros éxitos
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactanos">
+                        Contactanos
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <nav class="menu-responsive">
+        <a class="hamburguer-menu">&#9776;</a>
+        <ul class="hide responsive-items">
+            <a class="close-menu"> &times;</a>
+            <li>
+                <a class="responsive-link" href="#quienes-somos">
+                    ¿Quiénes somos?
+                </a>
+            </li>
+            <li>
+                <a class="responsive-link" href="#que-hacemos">
+                    ¿Qué hacemos?
+                </a>
+            </li>
+            <li>
+                <a class="responsive-link" href="#exitos">
+                    Nuestros éxitos
+                </a>
+            </li>
+            <li>
+                <a class="responsive-link" href="#contactanos">
+                    Contactanos
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <img class="logo-responsive" src="assets/img/logo.svg" alt="alma">
+    <div id="quienes-somos" class="header-container">
+        <div class="header header1">
+            <div class="header-content">
+                <h1 class="header-text">Somos una agencia boutique de prensa, comunicación y relaciones públicas
+                    integrada por profesionales con años de experiencia.</h1>
+                <a href="#que-hacemos">
+                    <img class="header-arrow" src="assets/icons/arrow-down.svg" alt="v">
+                </a>
+            </div>
+        </div>
+        <div class="header header2">
+            <div class="header-content">
+                <h1 class="header-text">Elaboramos estrategias de comunicación integral y PR, haciendo visible y
+                    amplificando contenido en social media y medios de prensa.</h1>
+                <a href="#que-hacemos">
+                    <img class="header-arrow" src="assets/icons/arrow-down.svg" alt="v">
+                </a>
+            </div>
+        </div>
+        <div class="header header3">
+            <div class="header-content">
+
+                <a href="#que-hacemos">
+                    <img class="header-arrow" src="assets/icons/arrow-down.svg" alt="v">
+                </a>
+            </div>
+        </div>
+        <div class="header header4">
+            <div class="header-content">
+
+                <a href="#que-hacemos">
+                    <img class="header-arrow" src="assets/icons/arrow-down.svg" alt="v">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".header-container").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+    </script>
+    <div id="que-hacemos" class="bandas-container">
+        <div onclick="toggleBanda1()" id="banda1" class="banda1 banda">
+            <div class="banda-content">
+                <h3 class="banda-title">Prensa tradicional<br class="hide-web"> y digital</h3>
+                <p class="add">+</p>
+            </div>
+            <div class="hover-banda">
+                <ul>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Desarrollo de estrategias de posicionamiento</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Desarrollo de campañas de amplificación</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Gestión de prensa</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Content Marketing</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Media training</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Desarrollo de gacetillas y presskits</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Auditoría y monitoreo de datos</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="toggleBanda2()" id="banda2" class="banda2 banda">
+            <div class="banda-content">
+                <h3 class="banda-title">Social Media<br class="hide-web">  y PR</h3>
+                <p class="add">+</p>
+            </div>
+            <div class="hover-banda">
+                <ul>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Convocatoria de celebrities y líderes de opinión</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Brand PR</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Relacionamiento con kol, periodistas, influencers, celebrities, entre otros.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Media planning</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Tours de prensa</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Creative gifts & presskit</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banda3 banda">
+            <h4 class="banda-header">Nuestra esencia</h4>
+            <h3 class="banda-title-destacado">Es imposible borrar de la mente, algo que traspasó el alma.</h3>
+        </div>
+        <div onclick="toggleBanda4()" id="banda4" class="banda4 banda">
+            <div class="banda-content">
+                <h3 class="banda-title">Comunicación corporativa<br class="hide-web">  y social</h3>
+                <p class="add">+</p>
+            </div>
+            <div class="hover-banda">
+                <ul>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Consultoría estratégica y táctica institucional </p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Key messaging: generación de mensajes clave</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Desarrollo de identidad de marca</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Comunicación de Crisis </p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">Desarrollo de Co-Brandings</p>
+                    </li>
+                    <li>
+                        <div class="cross">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                            </svg>
+                        </div>
+                        <p class="text">RSE</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div onclick="toggleExitos()" id="exitos" class="banda5 banda">
+            <div class="banda-content">
+                <h3 class="banda-title">Nuestros<br class="hide-web">  éxitos</h3>
+                <p id="add" class="add">+</p>
+            </div>
+        </div>
+    </div>
+    <div id="nuestros-exitos" class="grilla-container">
+        <div class="flex-container">
+            <div class="grilla-item grilla-item-texto">
+                <p class="grilla-text">Nuestros <br> éxitos</p>
+            </div>
+            <a class="grilla-item item-1" href="#exitos-1">
+                <div class="grilla-hover">
+                    <p>Nous etudions + Nike Sportswear</p>
+                    <p class="grilla-text-responsive">
+                        Acompañando el lanzamiento de la nueva zapatilla AIR MAX 720 y su concepto de “Ir a otro Nivel”
+                        desarrollamos una estrategia de co creación de 7 looks inspirados en la zapatilla, junto a
+                        Romina Cardillo, diseñadora de
+                        Nous Etudions.</p>
+                </div>
+            </a>
+            <a class="grilla-item item-2" href="#exitos-2">
+                <div class="grilla-hover">
+                    <p>Shoter</p>
+                    <p class="grilla-text-responsive">Desarrollamos el lanzamiento de SHOTER, producto de limpieza de
+                        zapatillas, en Argentina con una estrategia
+                        de posicionamiento de marca y amplificación en redes sociales a través de influencers afines a
+                        la misma.</p>
+                </div>
+            </a>
+            <a class="grilla-item item-3" href="#exitos-3">
+                <div class="grilla-hover">
+                    <p>Hyperflora</p>
+                    <p class="grilla-text-responsive">En el el marco del lanzamiento de la nueva colección HyperFlora de
+                        Nike Women, desarrollamos una estrategia
+                        de posicionamiento junto a Oriana Sabatini y Chiara Parravicini, quienes fueron las
+                        protagonistas de la
+                        campaña a nivel mundial.</p>
+                </div>
+            </a>
+        </div>
+        <div class="flex-container">
+            <a class="grilla-item item-4" href="#exitos-4">
+                <div class="grilla-hover">
+                    <p>Nike Airforce</p>
+                    <p class="grilla-text-responsive">Convocatoria de influencers para acompañar el evento de Air Force
+                        en Crobar con la participación de 22 influencers y amplificación en redes sociales. </p>
+                </div>
+            </a>
+            <a class="grilla-item item-5" href="#exitos-5">
+                <div class="grilla-hover">
+                    <p>Gobierno de la Ciudad</p>
+                    <p class="grilla-text-responsive">Idea, desarrollo y ejecución de “Buenos Aires para tus pulmones”
+                        una campaña que consistió en invitar a la
+                        gente a realizarse un sencillo test para saber, en tres minutos, la cantidad de monóxido de
+                        carbono en el
+                        cuerpo.</p>
+                </div>
+            </a>
+            <a class="grilla-item item-6" href="#exitos-6">
+                <div class="grilla-hover">
+                    <p>Madness + San Lorenzo</p>
+                    <p class="grilla-text-responsive"> Desarrollamos una estrategia de Co-Brading con Madness Clothing
+                        para el lanzamiento de la tercera camiseta
+                        de San Lorenzo.</p>
+                </div>
+            </a>
+            <a class="grilla-item item-7" href="#exitos-7">
+                <div class="grilla-hover">
+                    <p>Dox</p>
+                    <p class="grilla-text-responsive"> Estrategia de posicionamiento y gestión de prensa del colectivo
+                        de artistas. Relacionamiento con influencers
+                        y propuestas de activaciones con marcas.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="grid-expanded exitos-1" id="exitos-1">
+        <h3>desfile nous etudions + nike sportswear</h3>
+        <p>
+            Acompañando el lanzamiento de la nueva zapatilla AIR MAX 720 y su concepto de “Ir a otro Nivel”
+            desarrollamos una estrategia de co creación de 7 looks inspirados en la zapatilla, junto a Romina Cardillo,
+            diseñadora de
+            Nous Etudions.
+        </p>
+        <p>
+            Ejecutamos una estrategia de PR amplificando el mensaje logrando publicaciones en los principales medios de
+            moda del país y del mundo.
+            En el marco del Designer BA, se develó la co creación en un desfile con transmisión con un circuito cerrado
+            de sistema automatizado con cámaras robóticas controladas inalámbricamente donde además, desfilaron dos
+            atletas para potenciar el cross over de público objetivo.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/nous-etudions/nous_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/nous-etudions/nous_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/nous-etudions/nous_03.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/nous-etudions/nous_04.jpg">
+        </div>
+    </div>
+    <div class="grid-expanded exitos-2" id="exitos-2">
+        <h3>Shoter</h3>
+        <p>
+            Desarrollamos el lanzamiento de SHOTER, producto de limpieza de zapatillas, en Argentina con una estrategia
+            de posicionamiento de marca y amplificación en redes sociales a través de influencers afines a la misma.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/shoter/shoter_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/shoter/shoter_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/shoter/shoter_03.jpg">
+        </div>
+    </div>
+    <div class="grid-expanded exitos-3" id="exitos-3">
+        <h3>Hyperflora</h3>
+        <p>
+            En el el marco del lanzamiento de la nueva colección HyperFlora de Nike Women, desarrollamos una estrategia
+            de posicionamiento junto a Oriana Sabatini y Chiara Parravicini, quienes fueron las protagonistas de la
+            campaña a nivel mundial.
+        </p>
+        <p>
+            Para energizar localmente, ejecutamos una estrategia de PR logrando dos tapas de las revistas de moda y
+            lifestyle más importantes del país.
+        </p>
+        <p>
+            Para presentar la colección, se desarrolló un evento con más de 400 consumidoras junto a atletas e
+            influencers de la marca, quienes elevaron la celebración mediante sus redes sociales.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/hyperflora/hyperflora_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/hyperflora/hyperflora_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/hyperflora/hyperflora_03.jpg">
+            <video width="400" controls>
+                <source src="assets/img/nuestros-exitos/hyperflora/hyperflora.mp4" type="video/mp4">
+                Tu navegador no soporta este video.
+            </video>
+
+        </div>
+    </div>
+    <div class="grid-expanded exitos-4" id="exitos-4">
+        <h3>Nike Air Force</h3>
+        <p>Convocatoria de influencers para acompañar el evento de Air Force en Crobar con la participación de 22
+            influencers y amplificación en redes sociales.
+        </p>
+        <p>
+            Idea y desarrollo de Workshop “Force is Female” con la participación de Dakilah, Cata Bonadeo y Fio Silva.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/airforce/force_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/airforce/force_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/airforce/force_03.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/airforce/force_04.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/airforce/force_05.jpg">
+        </div>
+    </div>
+    <div class="grid-expanded exitos-5" id="exitos-5">
+        <h3>Buenos Aires para tus pulmones</h3>
+        <p>
+            Idea, desarrollo y ejecución de “Buenos Aires para tus pulmones” una campaña que consistió en invitar a la
+            gente a realizarse un sencillo test para saber, en tres minutos, la cantidad de monóxido de carbono en el
+            cuerpo. Con todas las mediciones realizadas, se logró alcanzar el "Guinness World Record" de mediciones de
+            monóxido de carbono en aire espirado.
+        </p>
+        <p>
+            Se desarrollo la amplificación de la campaña a través de medios gráficos, TV y radio y redes sociales.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/gob-ciudad/gobierno_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/gob-ciudad/gobierno_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/gob-ciudad/gobierno_03.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/gob-ciudad/gobierno_04.jpg">
+        </div>
+    </div>
+    <div class="grid-expanded exitos-6" id="exitos-6">
+        <h3>MADNESS CLOTHING + NIKE</h3>
+        <p>
+            Desarrollamos una estrategia de Co-Brading con Madness Clothing para el lanzamiento de la tercera camiseta
+            de San Lorenzo.
+        </p>
+        <p>
+            Realizamos un shooting con influencers para amplificar el mensaje a través de las redes sociales y los
+            principales medios digitales y gráficos para finalizar la campaña en un evento de celebración para público
+            target.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/madness-sanlorenzo/madness_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/madness-sanlorenzo/madness_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/madness-sanlorenzo/madness_03.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/madness-sanlorenzo/madness_04.jpg">
+        </div>
+    </div>
+    <div class="grid-expanded exitos-7" id="exitos-7">
+        <h3>DOX</h3>
+        <p>
+            Estrategia de posicionamiento y gestión de prensa del colectivo de artistas. Relacionamiento con influencers
+            y propuestas de activaciones con marcas.
+        </p>
+        <div class="gallery-container">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/dox/dox_01.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/dox/dox_02.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/dox/dox_03.jpg">
+            <img class="gallery-image" src="assets/img/nuestros-exitos/dox/dox_04.jpg">
+        </div>
+    </div>
+    <footer id="contactanos">
+        <div class="footer-container">
+            <div class="col">
+                <h3>Trabajemos <br>juntos</h3>
+            </div>
+            <div class="col">
+                <div class="col-item">
+                    <h5>Email</h5>
+                    <a href="mailto:info@almapr.com.ar">info@almapr.com.ar</a>
+                </div>
+            </div>
+            <!-- <div class="col">
+                
+                <div class="col-item">
+                    <h5>teléfono</h5>
+                    <a href="tel:01145192380">011 4519-2380</a>
+                </div>
+                <div class="instagram-grid">
+                    <img class="instagram-logo" src="" alt="instagram">
+                    <div class="instagram-button">
+                        Seguinos
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer-bottom">© 2013 ALMA PR. Todos los derechos reservados.</div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".gallery-container").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            });
+        });
+    </script>
+</body>
